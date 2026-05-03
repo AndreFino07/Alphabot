@@ -1,0 +1,74 @@
+/* Impostazioni generali */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Titolo */
+h1 {
+    position: absolute;
+    top: 30px;
+    font-size: 32px;
+    color: #222;
+}
+
+/* Griglia 3x3 per i pulsanti */
+form {
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-rows: 120px 120px 120px;
+    gap: 15px;
+}
+
+/* Stile pulsanti */
+button {
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #ffffffcc;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.08);
+    background: #fff;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Posizionamento direzionale */
+button[value="avanti"] {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+button[value="stop"] {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+button[value="indietro"] {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+button[value="sinistra"] {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+button[value="destra"] {
+    grid-column: 3;
+    grid-row: 2;
+}
